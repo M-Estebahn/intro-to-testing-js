@@ -22,7 +22,7 @@ describe('sayHello', function(){
             expect(typeof sayHello()).toBe('string');
         });
         it('should return the string "Hello, Jane!" when executed', function () {
-            expect(sayHello()).toBe('Hello, Jane!');
+            expect(sayHello('Jane')).toBe('Hello, Jane!');
 
          });
         it('should return "Hello Alex" when passed an input of alex ', function () {
@@ -31,5 +31,24 @@ describe('sayHello', function(){
         it('should return "Hello, Pat!" when passed an input of Pat', function () {
             expect(sayHello('Pat')).toBe('Hello, Pat!')
         });
+        it('should return "Hello, World!', function () {
+            expect(sayHello(true)).toBe('Hello, World!')
+        });
+        it('should return "Hello, World!', function () {
+            expect(sayHello(false)).toBe('Hello, World!')
+        });
+        it('should return "Hello, World!', function () {
+            expect(sayHello(null)).toBe('Hello, World!')
+        });
+        it('should return "Hello, World!', function () {
+            expect(sayHello('')).toBe('Hello, World!')
+        });
+        it('should return "Hello, World!', function () {
+            expect(sayHello(2.3)).toBe('Hello, World!')
+        });
+        it('should return "Hello, World!', function () {
+            expect(sayHello('5')).toBe('Hello, World!')
+        });
+
     }
 )
