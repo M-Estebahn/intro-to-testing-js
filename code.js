@@ -16,12 +16,5 @@ function isFive(input){
 }
 
 function isEven(input) {
-    if (input === 2)
-        return true;
-    else if (input  === -4)
-        return true;
-    else if (input == 8 )
-        return true;
-    else
-        return false;
+    return (typeof input != 'boolean'&& input % 2 ===0)
 }
