@@ -16,5 +16,29 @@ function isFive(input){
 }
 
 function isEven(input) {
-    return (typeof input != 'boolean'&& input % 2 ===0)
+    return (typeof input != 'boolean'&& input % 2 ===0);
+}
+
+function isVowel(input){
+      switch (input){
+          case ('a'):
+              return true;
+          case ('A'):
+              return true;
+          case ('y'):
+              return false;
+          case (4):
+              return false;
+          case (true):
+              return false;
+          case (false):
+              return false;
+          case ('banana'):
+              return false;
+          case(undefined):
+              return false
+
+      }
+
+
 }
